@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain", "PromptGarten.Domain\PromptGarten.Domain.csproj", "{525787E1-73E3-4A1D-8A67-B4C03ADD24EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain", "Main\PromptGarten.Domain\PromptGarten.Domain.csproj", "{525787E1-73E3-4A1D-8A67-B4C03ADD24EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{42000C89-9DA3-46DE-A9F2-1D6B8149EBB1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{C03E6193-B995-4736-BE56-C50C3979F2A0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain.Test", "PromptGarten.Domain.Test\PromptGarten.Domain.Test.csproj", "{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain.Test", "Test\PromptGarten.Domain.Test\PromptGarten.Domain.Test.csproj", "{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

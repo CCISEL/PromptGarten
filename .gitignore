@@ -1,5 +1,5 @@
 obj
-src/**/bin/*
+bin
 scratch
 scratch/*
 deploy
