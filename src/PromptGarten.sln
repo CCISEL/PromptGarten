@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain", "Main
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Domain.Test", "Test\PromptGarten.Domain.Test\PromptGarten.Domain.Test.csproj", "{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{9D570F90-784D-498A-BB63-AA3397CDBD11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{642593DE-BBA5-4D2D-B139-8E777A7C530D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,7 +28,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA} = {42000C89-9DA3-46DE-A9F2-1D6B8149EBB1}
-		{525787E1-73E3-4A1D-8A67-B4C03ADD24EE} = {C03E6193-B995-4736-BE56-C50C3979F2A0}
+		{525787E1-73E3-4A1D-8A67-B4C03ADD24EE} = {9D570F90-784D-498A-BB63-AA3397CDBD11}
+		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA} = {642593DE-BBA5-4D2D-B139-8E777A7C530D}
 	EndGlobalSection
 EndGlobal
