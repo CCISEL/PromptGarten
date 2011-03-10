@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{9D570F90-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{642593DE-BBA5-4D2D-B139-8E777A7C530D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptGarten.Web", "Main\PromptGarten.Web\PromptGarten.Web.csproj", "{56824441-4BE9-49B0-8940-FBBAEFEB570F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56824441-4BE9-49B0-8940-FBBAEFEB570F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56824441-4BE9-49B0-8940-FBBAEFEB570F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56824441-4BE9-49B0-8940-FBBAEFEB570F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56824441-4BE9-49B0-8940-FBBAEFEB570F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{525787E1-73E3-4A1D-8A67-B4C03ADD24EE} = {9D570F90-784D-498A-BB63-AA3397CDBD11}
+		{56824441-4BE9-49B0-8940-FBBAEFEB570F} = {9D570F90-784D-498A-BB63-AA3397CDBD11}
 		{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA} = {642593DE-BBA5-4D2D-B139-8E777A7C530D}
 	EndGlobalSection
 EndGlobal
