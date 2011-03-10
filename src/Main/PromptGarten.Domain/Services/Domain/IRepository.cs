@@ -6,17 +6,17 @@ namespace PromptGarten.Domain.Services
 {
     public interface IRepository
     {
-        IQueryable<TEntity> Query<TEntity>();
+        IQueryable<TAggregate> Query<TAggregate>();
 
-        void Save<TEntity>(TEntity target);
-        void Delete<TEntity>(TEntity target);
+        void Save<TAggregate>(TAggregate target);
+        void Delete<TAggregate>(TAggregate target);
     }
 
     public static class RepositoryExtensions
     {
-        public static TEntity Find<TEntity>(this IRepository repository, Expression<Func<TEntity, bool>> filter)
+        public static TAggregate Find<TAggregate>(this IRepository repository, Expression<Func<TAggregate, bool>> filter)
         {
-            return repository.Query<TEntity>().SingleOrDefault(filter);
+            return repository.Query<TAggregate>().SingleOrDefault(filter);
         }
     }
 }
