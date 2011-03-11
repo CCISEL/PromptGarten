@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}</ProjectGuid>
+    <ProjectGuid>{AB4661D6-E6C2-45A3-836D-60EE10B0FF92}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PromptGarten.Domain.Test</RootNamespace>
-    <AssemblyName>PromptGarten.Domain.Test</AssemblyName>
+    <RootNamespace>PromptGarten.Common</RootNamespace>
+    <AssemblyName>PromptGarten.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,17 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\NUnit.2.5.9.10348\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.mocks, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\NUnit.2.5.9.10348\lib\nunit.mocks.dll</HintPath>
-    </Reference>
-    <Reference Include="pnunit.framework">
-      <HintPath>..\..\packages\NUnit.2.5.9.10348\lib\pnunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,23 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InMemoryRepository.cs" />
-    <Compile Include="Model\TeacherTests.cs" />
+    <Compile Include="DictionaryExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\..\Main\PromptGarten.Domain\PromptGarten.Domain.csproj">
-      <Project>{525787E1-73E3-4A1D-8A67-B4C03ADD24EE}</Project>
-      <Name>PromptGarten.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\PromptGarten.Common\PromptGarten.Common.csproj">
-      <Project>{AB4661D6-E6C2-45A3-836D-60EE10B0FF92}</Project>
-      <Name>PromptGarten.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
