@@ -1,0 +1,11 @@
+﻿@model PromptGarten.Web.Models.ShellModel
+
+@{
+    ViewBag.Title = "ViewPage1";
+}
+
+<h2>ViewPage1</h2>
+<form action="/Shell/Exec" method="post">
+    Command: @Html.TextBoxFor(m=>m.Command)    
+</form>
+
