@@ -64,7 +64,7 @@
       <Project>{525787E1-73E3-4A1D-8A67-B4C03ADD24EE}</Project>
       <Name>PromptGarten.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\PromptGarten.Common\PromptGarten.Common.csproj">
+    <ProjectReference Include="..\..\Main\PromptGarten.Common\PromptGarten.Common.csproj">
       <Project>{AB4661D6-E6C2-45A3-836D-60EE10B0FF92}</Project>
       <Name>PromptGarten.Common</Name>
     </ProjectReference>
