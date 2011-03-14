@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AddTeacherCommandTests.cs" />
     <Compile Include="InMemoryRepository.cs" />
     <Compile Include="Model\TeacherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

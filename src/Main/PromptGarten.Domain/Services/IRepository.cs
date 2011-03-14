@@ -8,13 +8,15 @@ namespace PromptGarten.Domain.Services
     {
         IQueryable<TAggregate> Query<TAggregate>();
 
+        void Insert<TAggregate>(TAggregate target);
         void Save<TAggregate>(TAggregate target);
         void Delete<TAggregate>(TAggregate target);
     }
 
     public static class RepositoryExtensions
     {
-        public static TAggregate Find<TAggregate>(this IRepository repository, Expression<Func<TAggregate, bool>> filter)
+        public static TAggregate Find<TAggregate>(this IRepository repository, 
+                                                  Expression<Func<TAggregate, bool>> filter)
         {
             return repository.Query<TAggregate>().SingleOrDefault(filter);
         }

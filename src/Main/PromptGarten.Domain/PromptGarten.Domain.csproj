@@ -36,6 +36,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AddTeacherCommand.cs" />
+    <Compile Include="Exceptions\DuplicateAggregateException.cs" />
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\LectiveSemester.cs" />
     <Compile Include="Model\LectiveYear.cs" />
@@ -43,9 +45,13 @@
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ICourseRepository.cs" />
-    <Compile Include="Repositories\IRepository.cs" />
-    <Compile Include="Services\Domain\IRepository.cs" />
+    <Compile Include="Services\IRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PromptGarten.Common\PromptGarten.Common.csproj">
+      <Project>{AB4661D6-E6C2-45A3-836D-60EE10B0FF92}</Project>
+      <Name>PromptGarten.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
