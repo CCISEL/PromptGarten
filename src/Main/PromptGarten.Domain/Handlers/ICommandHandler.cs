@@ -1,4 +1,4 @@
-﻿namespace PromptGarten.Domain.Commands
+﻿namespace PromptGarten.Domain.Handlers
 {
     public interface ICommandHandler<in TCommand>
     {

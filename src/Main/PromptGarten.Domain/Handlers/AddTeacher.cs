@@ -1,7 +1,8 @@
-﻿using PromptGarten.Domain.Model;
+﻿using PromptGarten.Domain.Commands;
+using PromptGarten.Domain.Model;
 using PromptGarten.Domain.Services;
 
-namespace PromptGarten.Domain.Commands
+namespace PromptGarten.Domain.Handlers
 {
     public class AddTeacher : ICommandHandler<AddTeacherCommand>
     {
