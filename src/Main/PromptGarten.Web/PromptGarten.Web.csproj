@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DupeDiControllerFactory.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -124,6 +126,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Teacher\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Teacher\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Test\PromptGarten.Domain.Test\PromptGarten.Domain.Test.csproj">
+      <Project>{B5D1C659-BB3A-40D4-AA67-BD31FDFB19CA}</Project>
+      <Name>PromptGarten.Domain.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PromptGarten.Domain\PromptGarten.Domain.csproj">
+      <Project>{525787E1-73E3-4A1D-8A67-B4C03ADD24EE}</Project>
+      <Name>PromptGarten.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

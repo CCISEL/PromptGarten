@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using PromptGarten.Web.Controllers;
 
 namespace PromptGarten.Web
 {
@@ -35,6 +36,8 @@ namespace PromptGarten.Web
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            ControllerBuilder.Current.SetControllerFactory(new DupeDiControllerFactory());
         }
     }
 }
