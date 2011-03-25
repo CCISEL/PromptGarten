@@ -1,4 +1,6 @@
 ﻿@model IQueryable<PromptGarten.Domain.Model.Teacher>
+@using MvcContrib.UI.Grid;
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml"; // This is optional!? _Layout.cshtml is the default layout name?
@@ -7,11 +9,8 @@
     Teatchers list:
 </h2>
 
-@foreach (PromptGarten.Domain.Model.Teacher t in Model.OrderBy(t => t.Id))
-{
-    @string.Format("{0} - {1}", t.Id, t.Name);
-    <br />
-}
+@Html.Grid(Model).AutoGenerateColumns()
+
 <br />
 <br />
 @Html.ActionLink("Create", "Create")

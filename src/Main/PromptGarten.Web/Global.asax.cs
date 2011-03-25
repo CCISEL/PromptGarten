@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using PromptGarten.Web.Controllers;
+using PromptGarten.Domain.Services;
+using PromptGarten.Domain.Model;
 
 namespace PromptGarten.Web
 {
@@ -37,7 +39,17 @@ namespace PromptGarten.Web
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            ControllerBuilder.Current.SetControllerFactory(new DupeDiControllerFactory());
+            var diControllerFactory = new DupeDiControllerFactory();
+            ControllerBuilder.Current.SetControllerFactory(diControllerFactory);
+            //
+            // Fill InMemoryRepository
+            //
+            var rep = diControllerFactory.GetInstance<IRepository>();
+            rep.Insert(new Teacher(12563, "Pedro Félix"));
+            rep.Insert(new Teacher(13125, "Duarte Nunes"));
+            rep.Insert(new Teacher(76152, "Luís Falcão"));
+            rep.Insert(new Teacher(10702, "FM"));
+
         }
     }
 }

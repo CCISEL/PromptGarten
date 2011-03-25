@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using PromptGarten.Domain.Commands;
 using PromptGarten.Domain.Services;
@@ -20,7 +21,7 @@ namespace PromptGarten.Web.Controllers
 
         public ActionResult Index()
         {
-            return View(_rep.Query<Teacher>());
+            return View(_rep.Query<Teacher>().OrderBy(t => t.Id));
         }
         public ActionResult Create()
         {

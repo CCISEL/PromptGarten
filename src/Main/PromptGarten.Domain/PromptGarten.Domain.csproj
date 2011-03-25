@@ -36,8 +36,10 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AddStudentCommand.cs" />
     <Compile Include="Handlers\AddTeacher.cs" />
     <Compile Include="Commands\AddTeacherCommand.cs" />
+    <Compile Include="Handlers\AddStudent.cs" />
     <Compile Include="Handlers\ICommandHandler.cs" />
     <Compile Include="Exceptions\DuplicateAggregateException.cs" />
     <Compile Include="Model\Course.cs" />
